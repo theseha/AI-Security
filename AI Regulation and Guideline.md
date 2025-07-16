@@ -41,6 +41,7 @@
 - **인공지능 발전과 신뢰 기반 조성 등에 관한 기본법**  
   *대한민국 국회 (National Assembly of the Republic of Korea)*
 
+<sub>출처: [MITRE ATLAS - AI Security Topics](https://atlas.mitre.org/resources/ai-security-101) 
 ---
 
 ## 📌 AI 규제가 기업과 기관에 미치는 핵심 영향 (요약)
