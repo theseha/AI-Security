@@ -43,6 +43,7 @@ MLOps 중심의 대표적인 모델 개발 파이프라인으로는 **CRISP-ML(Q
 
 > 📌 참고 이미지  
 > **CRISP-ML(Q)** 머신러닝 생애주기 프로세스 (출처: visenger / CC BY 4.0)
+<img width="2701" height="1499" alt="image" src="https://github.com/user-attachments/assets/64d469c6-199b-4c23-9bd1-4c8256b2c3c4" />
 
 ---
 
