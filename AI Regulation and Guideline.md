@@ -1,3 +1,4 @@
+2025.07.17
 # 주요 AI 규제 및 프레임워크
 
 - **AI Risk Management Framework**  
