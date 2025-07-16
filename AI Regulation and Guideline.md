@@ -22,9 +22,6 @@
 - **Artificial Intelligence Bill of Rights**  
   Stanford University Human-Centered Artificial Intelligence
 
-- **S.3572 Algorithmic Accountability Act of 2022**  
-  117th United States Congress
-
 - **EU Artificial Intelligence Act**  
   European Parliament
 
