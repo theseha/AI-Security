@@ -13,6 +13,8 @@
 📌 또한, **[ATLAS Navigator](https://atlas.mitre.org/navigator)**에서는  
 ATLAS 매트릭스를 **ATT&CK Enterprise 기술과 함께 하이라이팅된 형식으로 시각적으로 비교**해서 확인할 수 있습니다.
 
+<img width="894" height="325" alt="Mitre_Atlas" src="https://github.com/user-attachments/assets/64e2cd76-a4ad-41a8-a8f2-aa18607de77e" />
+
 ---
 
 > 🔗 [ATLAS Navigator 바로가기 »](https://atlas.mitre.org/navigator)
