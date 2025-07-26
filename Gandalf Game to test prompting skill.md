@@ -6,7 +6,7 @@
 
 이 게임은 단순한 오락을 넘어서, **LLM(Large Language Model)**의 보안 취약점을 이해하고 **prompt injection** 기술을 실전처럼 연습해볼 수 있도록 설계되어 있습니다. 사용자에게 주어지는 목표는 단 하나 — **보안으로 숨겨진 시스템 비밀번호를 알아내는 것**입니다.
 
-![Uploading gandalf.png…]()
+<img width="304" height="391" alt="gandalf" src="https://github.com/user-attachments/assets/69fe455d-fdcc-4b46-855e-f9a4b014622e" />
 
 ---
 
