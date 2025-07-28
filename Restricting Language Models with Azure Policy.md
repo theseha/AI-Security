@@ -74,7 +74,7 @@ Azure는 **Policy** 기능을 통해 AI Foundry 환경에서 사용 가능한 La
   }
 }
 ```
-✅ allowedModels 항목에 허용하고자 하는 정확한 모델 ID(예: "openai/gpt-4")를 입력하세요.
+✅ allowedModels 항목에 허용하고자 하는 정확한 모델 ID(예: "gpt-4")를 입력하세요.
 
 ### 3. 정책 할당 (Assignment)
 
