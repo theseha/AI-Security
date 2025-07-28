@@ -84,8 +84,6 @@ Azure는 **Policy** 기능을 통해 AI Foundry 환경에서 사용 가능한 La
 
 <img width="853" height="629" alt="Policy3" src="https://github.com/user-attachments/assets/6d6c77c2-44ca-4772-9734-9c573559be81" />
 
-- 할당 시 `allowedModels` 값도 함께 설정해야 합니다.
-
 ### ⚙️ 적용 결과
 
 - **정책은 수 초 내로 적용**됩니다.
