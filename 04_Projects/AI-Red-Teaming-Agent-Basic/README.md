@@ -74,7 +74,7 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 | UnicodeConfusable | Encoding Techniques | 비슷하게 생긴 유니코드 사용 `"Нello Wоrld"` | X |
 | UnicodeSubstitution | Encoding Techniques | 유니코드 변형 문자 사용 `"Hｅｌｌｏ　Ｗｏｒｌｄ"` | X |
 | URL | Text Transformation | URL 인코딩 `"Hello%20World"` | O |
-| Jailbreak | Jailbreak Attempts | 우회 프롬프트 삽입 | O |
+| Jailbreak | Jailbreak Attempts | 우회 프롬프트 삽입 | X |
 
 ### Moderate Complexity
 
