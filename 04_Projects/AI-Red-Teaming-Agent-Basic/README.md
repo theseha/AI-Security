@@ -238,7 +238,7 @@ custom_red_team_agent = RedTeam(
 )
 ```
 
-'custom_attack_prompts_kr.json' 파일의 경우 아래와 같이 형식을 맞추고, risk-type은 'violence', 'self_harm', 'sexual', 'hate_unfairness' 중 하나로 입력하면 됩니다.
+'custom_attack_prompts_kr.json' 파일의 경우 아래와 같이 형식을 맞추고, risk-type은 **'violence'**, **'self_harm'**, **'sexual'**, **'hate_unfairness'** 중 하나로 입력하면 됩니다.
 
 ```json
 [
