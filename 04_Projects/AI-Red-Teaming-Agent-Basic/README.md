@@ -84,7 +84,7 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 
 ### Difficult Complexity
 
-- Easy와 Moderate 혼합
+- 2개의 AttackStrategy를 Compose한 경우 
 ```python
 AttackStrategy.Compose([AttackStrategy.Tense, AttackStrategy.Base64])
 ```
