@@ -78,6 +78,13 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 |----------------|----------|-------------|
 | Tense | Text Transformation | 시제를 과거형으로 변경 `"Said hello to the world"` |
 
+### Difficult Complexity
+
+- Easy와 Moderate 혼합
+```python
+AttackStrategy.Compose([AttackStrategy.Tense, AttackStrategy.Base64])
+```
+
 ## Getting Started
 
 ### Prerequisites
