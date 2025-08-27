@@ -93,7 +93,7 @@ AttackStrategy.Compose([AttackStrategy.Tense, AttackStrategy.Base64])
 
 ### Prerequisites
 
-- Azure AI Foundry Project 또는 Hub-based Project
+- Azure AI Foundry Project 또는 Hub-based Project (현재, Azure AI Foundry Project로 할 것을 권장)
 - **Python 3.10, 3.11, 3.12** (PyRIT 지원 버전)
 - **지원 지역**: East US2, Sweden Central, France Central, Switzerland West
 
