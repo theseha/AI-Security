@@ -167,7 +167,7 @@ az ad sp create-for-rbac \
 ```
 
 #### 2. Configure Environment Variables
-- 
+
 Create `.env` file with:
 ```env
 AZURE_CLIENT_ID=<App ID>
