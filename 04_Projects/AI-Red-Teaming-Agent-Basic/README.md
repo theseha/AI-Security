@@ -186,7 +186,7 @@ AZURE_CLIENT_SECRET=<password>
 
 #### 1. Model Configurations
 - 기본 LLM 모델을 직접 대상으로 스캔 (모델 자체의 안전성 테스트)
-- 현재 `/chat/completions` endpoint만 지원 (OpenAI API 형식)
+- 현재 `/chat/completions` 형식의 Legacy endpoint만 지원 (OpenAI API 형식)
 
 #### 2. Simple Callback
 - Agent가 정상 동작하는지 로직 확인하는 목적으로 스캔
