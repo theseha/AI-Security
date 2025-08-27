@@ -1,3 +1,4 @@
+# 2025.08.27
 # Azure imports
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider # for advanced callback
 from azure.ai.evaluation.red_team import RedTeam, RiskCategory, AttackStrategy
