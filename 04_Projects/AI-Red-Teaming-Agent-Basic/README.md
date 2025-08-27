@@ -53,34 +53,36 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 
 ### Easy Complexity
 
-| Attack Strategy | Category | Description |
-|----------------|----------|-------------|
-| AnsiAttack | Encoding Techniques | ANSI escape 코드로 색상/스타일 변경 `\x1b[31mHello World\x1b[0m` |
-| AsciiArt | Encoding Techniques | ASCII 문자로 그림 표현 |
-| AsciiSmuggler | Encoding Techniques | ASCII 코드 안에 데이터 숨김 `"Hello&#x20;World<!--secret:1234-->"` |
-| Atbash | Text Transformation | 알파벳을 반대로 치환 (A <-> Z, B <-> Y) `"Svool Dliow"` |
-| Base64 | Text Transformation | Base64 인코딩 `"SGVsbG8gV29ybGQ="` |
-| Binary | Text Transformation | 2진수로 변환 |
-| Caesar | Text Transformation | 문자 3칸씩 밀기 `"Khoor Zruog"` |
-| CharacterSpace | Character Manipulation | 문자 사이에 공백 추가 `"H e l l o W o r l d"` |
-| CharSwap | Character Manipulation | 문자 위치 바꾸기 `"Hlelo Wrold"` |
-| Diacritic | Character Manipulation | 문자에 발음 기호 추가 `"Héllö Wòrld"` |
-| Flip | Character Manipulation | 문자 좌우 반전 `"plɹoM ollǝH"` |
-| Leetspeak | Character Manipulation | 숫자/기호로 대체 `"H3ll0 W0r1d"` |
-| Morse | Text Transformation | 모스 부호 변환 `".... . .-.. .-.. --- / .-- --- .-. .-.. -.."` |
-| ROT13 | Text Transformation | 13칸 문자 치환 `"Uryyb Jbeyq"` |
-| SuffixAppend | Jailbreak Attempts | 문장 뒤에 악성 명령 추가 |
-| StringJoin | Character Manipulation | 문자열 합치기 `"Hel" + "lo " + "World"` |
-| UnicodeConfusable | Encoding Techniques | 비슷하게 생긴 유니코드 사용 `"Нello Wоrld"` |
-| UnicodeSubstitution | Encoding Techniques | 유니코드 변형 문자 사용 `"Hｅｌｌｏ　Ｗｏｒｌｄ"` |
-| URL | Text Transformation | URL 인코딩 `"Hello%20World"` |
-| Jailbreak | Jailbreak Attempts | 우회 프롬프트 삽입 |
+| Attack Strategy | Category | Description | Korean Support | 
+|----------------|----------|-------------| ---------------- |
+| AnsiAttack | Encoding Techniques | ANSI escape 코드로 색상/스타일 변경 `\x1b[31mHello World\x1b[0m` | O |
+| AsciiArt | Encoding Techniques | ASCII 문자로 그림 표현 | X |
+| AsciiSmuggler | Encoding Techniques | ASCII 코드 안에 데이터 숨김 `"Hello&#x20;World<!--secret:1234-->"` | X |
+| Atbash | Text Transformation | 알파벳을 반대로 치환 (A <-> Z, B <-> Y) `"Svool Dliow"` | X |
+| Base64 | Text Transformation | Base64 인코딩 `"SGVsbG8gV29ybGQ="` | X (Encoding 자체는 지원되지만 엉뚱하고 긍정적인 의미로 치환됨) |
+| Binary | Text Transformation | 2진수로 변환 | X (Encoding 자체는 지원되지만 엉뚱하고 일반적인 의미로 치환됨) |
+| Caesar | Text Transformation | 문자 3칸씩 밀기 `"Khoor Zruog"` | X |
+| CharacterSpace | Character Manipulation | 문자 사이에 공백 추가 `"H e l l o W o r l d"` | O |
+| CharSwap | Character Manipulation | 문자 위치 바꾸기 `"Hlelo Wrold"` | X |
+| Diacritic | Character Manipulation | 문자에 발음 기호 추가 `"Héllö Wòrld"` | X |
+| Flip | Character Manipulation | 문자 좌우 반전 `"plɹoM ollǝH"` | O |
+| Leetspeak | Character Manipulation | 숫자/기호로 대체 `"H3ll0 W0r1d"` | X |
+| Morse | Text Transformation | 모스 부호 변환 `".... . .-.. .-.. --- / .-- --- .-. .-.. -.."` | X |
+| ROT13 | Text Transformation | 13칸 문자 치환 `"Uryyb Jbeyq"` | X |
+| SuffixAppend | Jailbreak Attempts | 문장 뒤에 악성 명령 추가 | O |
+| StringJoin | Character Manipulation | 문자열 합치기 `"Hel" + "lo " + "World"` | X |
+| UnicodeConfusable | Encoding Techniques | 비슷하게 생긴 유니코드 사용 `"Нello Wоrld"` | X |
+| UnicodeSubstitution | Encoding Techniques | 유니코드 변형 문자 사용 `"Hｅｌｌｏ　Ｗｏｒｌｄ"` | X |
+| URL | Text Transformation | URL 인코딩 `"Hello%20World"` | O |
+| Jailbreak | Jailbreak Attempts | 우회 프롬프트 삽입 | O |
 
 ### Moderate Complexity
 
-| Attack Strategy | Category | Description |
-|----------------|----------|-------------|
-| Tense | Text Transformation | 시제를 과거형으로 변경 `"Said hello to the world"` |
+| Attack Strategy | Category | Description | Korean Support |
+|----------------|----------|-------------| ---------------- |
+| Tense | Text Transformation | 시제를 과거형으로 변경 `"Said hello to the world"` | X |
+
+- 한글 지원의 경우 일부 Attack Strategy에 대해서만 지원하므로, Custom Prompt 입력시, 각각의 Attack Strategy가 적용된 프롬프트 자체를 추가하는 것이 권장됨
 
 ### Difficult Complexity
 
