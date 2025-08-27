@@ -1,4 +1,4 @@
 azure-identity
-azure-ai-evaluation
+azure-ai-evaluation[redteam]
 openai
 python-dotenv
