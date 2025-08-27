@@ -29,12 +29,16 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 - **Pre-deployment**: 생성형 AI 애플리케이션을 운영 환경에 배포하기 전
 - **In Production**: Azure AI Content Safety와 시스템 메시지 상의 [안전 문구](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/safety-system-message-templates) 사용
 
+<img width="1799" height="1012" alt="image" src="https://github.com/user-attachments/assets/20d61e25-182f-43b5-90ef-6003fec7bfd1" />
+
 ### How AI Red Teaming Works
 
 1. 위험 범주 별 **Seed Prompt 또는 공격 목표 데이터셋** 제공
 2. Direct Prompt Injection은 기본 필터로 쉽게 차단 가능하므로, PyRIT을 이용하여 고도화된 공격을 테스트
 3. 공격 시뮬레이션과 유해 콘텐츠 응답 평가를 위한 Fine-tuned **적대적 LLM** 제공
 4. 평가 지표로 **ASR** (Attack Success Rate) - 전체 공격 시도 대비 성공 비율 측정
+
+<img width="972" height="494" alt="image" src="https://github.com/user-attachments/assets/9cef4e17-1533-4824-bc20-06a6ae6bdf0f" />
 
 ## Supported Risk Categories
 
@@ -163,7 +167,7 @@ az ad sp create-for-rbac \
 ```
 
 #### 2. Configure Environment Variables
-
+- 
 Create `.env` file with:
 ```env
 AZURE_CLIENT_ID=<App ID>
@@ -173,8 +177,8 @@ AZURE_CLIENT_SECRET=<password>
 
 #### 3. Grant Permissions
 
-- Azure AI Foundry Project: **Cognitive Services User** 권한
-- Azure AI Foundry: **Cognitive Services OpenAI User** 권한 (for advanced calls)
+- Azure AI Foundry Project: **Cognitive Services User** 권한 (Service Principal에 부여)
+- Azure AI Foundry: **Cognitive Services OpenAI User** 권한 (Service Principal에 부여) (for advanced calls)
 
 ## Run AI Red Teaming Agent Locally
 
