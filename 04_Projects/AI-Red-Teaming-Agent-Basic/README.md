@@ -83,6 +83,7 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 | Tense | Text Transformation | 시제를 과거형으로 변경 `"Said hello to the world"` | X |
 
 - 한글 지원의 경우 일부 Attack Strategy에 대해서만 지원하므로, Custom Prompt 입력시, 각각의 Attack Strategy가 적용된 프롬프트 자체를 추가하는 것이 권장됨
+- 한글로 입력한 Jailbreak 문구도 경우에 따라서 탐지를 못하기도 함 (다만, 실제 뒤에 언급되는 Risk Category 관련 문구로 탐지가 이루어짐)
 
 ### Difficult Complexity
 
