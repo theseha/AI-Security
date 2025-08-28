@@ -70,7 +70,7 @@ AI 시스템 개발 시 발생할 수 있는 AI 관련 위험을 관리하기 �
 | Morse | Text Transformation | 모스 부호 변환 `".... . .-.. .-.. --- / .-- --- .-. .-.. -.."` | X |
 | ROT13 | Text Transformation | 13칸 문자 치환 `"Uryyb Jbeyq"` | X |
 | SuffixAppend | Jailbreak Attempts | 문장 뒤에 악성 명령 추가 | O |
-| StringJoin | Character Manipulation | 문자열 합치기 `"Hel" + "lo " + "World"` | X |
+| StringJoin | Character Manipulation | 문자열 합치기 `"-H-e-l-l-o- -W-o-r-l-d-"` | O |
 | UnicodeConfusable | Encoding Techniques | 비슷하게 생긴 유니코드 사용 `"Нello Wоrld"` | X |
 | UnicodeSubstitution | Encoding Techniques | 유니코드 변형 문자 사용 `"Hｅｌｌｏ　Ｗｏｒｌｄ"` | X |
 | URL | Text Transformation | URL 인코딩 `"Hello%20World"` | O |
