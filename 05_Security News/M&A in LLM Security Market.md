@@ -1,5 +1,7 @@
 📅 2025.09.18
 
+##주요 사이버보안 기업의 Gen AI 보안 스타트업 인수 현황
+
 |Acquirer|Target|Purpose|
 |--------|------|-------|
 |CrowdStrike|Pangea|직원들 외부 AI 도구 사용을 모니터링하기 위해|
