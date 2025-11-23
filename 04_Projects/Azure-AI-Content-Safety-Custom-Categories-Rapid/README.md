@@ -69,13 +69,79 @@ print(response.text)
 - 생성된 Incident에 학습용 샘플 데이터를 업로드합니다
 - 샘플은 탐지하고자 하는 콘텐츠의 예시들입니다
 
+```python
+import requests
+import json
+
+url = "https://<endpoint>/contentsafety/text/incidents/<text-incident-name>:addIncidentSamples?api-version=2024-02-15-preview"
+
+payload = json.dumps({
+  "IncidentSamples": [
+    {
+      "text": "<text-example-1>"
+    },
+    {
+      "text": "<text-example-1>"
+    },
+    ...
+  ]
+})
+headers = {
+  'Ocp-Apim-Subscription-Key': '<your-content-safety-key>',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
+```
+
 #### 3. 배포 (Deployment)
 - 샘플 업로드가 완료되면 Incident를 배포합니다
 - 배포가 완료되어야 실제 탐지 API를 사용할 수 있습니다
 
+```python
+import requests
+import json
+
+url = "https://<endpoint>/contentsafety/text/incidents/<text-incident-name>:deploy?api-version=2024-02-15-preview"
+
+payload = {}
+headers = {
+  'Ocp-Apim-Subscription-Key': '<your-content-safety-key>',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
+```
+
 #### 4. Incident Detection API 호출
 - 배포된 Incident를 사용하여 콘텐츠를 분석합니다
 - REST API를 통해 탐지 요청을 보냅니다
+
+```python
+import requests
+import json
+
+url = "https://<endpoint>/contentsafety/text:detectIncidents?api-version=2024-02-15-preview"
+
+payload = json.dumps({
+  "text": "<test-text>",
+  "incidentNames": [
+    "<text-incident-name>"
+  ]
+})
+headers = {
+  'Ocp-Apim-Subscription-Key': '<your-content-safety-key>',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
+```
 
 ## API 응답 형식
 
