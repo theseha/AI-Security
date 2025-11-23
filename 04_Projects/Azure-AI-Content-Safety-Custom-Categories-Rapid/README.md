@@ -44,6 +44,27 @@ Custom Categories (Rapid)를 사용하기 위한 전체 프로세스는 다음�
 - 하나의 Category = 하나의 Incident
 - 먼저 탐지하고자 하는 콘텐츠 유형에 대한 Incident를 생성합니다
 
+```python
+import requests
+import json
+
+url = "https://<endpoint>/contentsafety/text/incidents/<text-incident-name>?api-version=2024-02-15-preview"
+
+payload = json.dumps({
+  "incidentName": "<text-incident-name>",
+  "incidentDefinition": "string"
+})
+headers = {
+  'Ocp-Apim-Subscription-Key': '<your-content-safety-key>',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("PATCH", url, headers=headers, data=payload)
+
+print(response.text)
+```
+
+
 #### 2. Sample 업로드
 - 생성된 Incident에 학습용 샘플 데이터를 업로드합니다
 - 샘플은 탐지하고자 하는 콘텐츠의 예시들입니다
