@@ -25,7 +25,7 @@ Azure AI Content Safety의 Custom Categories는 두 가지 버전으로 제공�
 
 Custom Categories (Standard 및 Rapid 모두)는 **한국(Korea) 리전을 지원하지 않습니다**. 따라서 해당 기능을 사용하기 위해서는 지원되는 다른 리전에 Azure AI Content Safety 인스턴스를 별도로 생성해야 합니다.
 
-지원 리전에 대한 자세한 정보는 Microsoft Learn 문서를 참조하시기 바랍니다.
+지원 리전에 대한 자세한 정보는 [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview#region-availability) 문서를 참조하시기 바랍니다.
 
 ## 구현 방법
 
